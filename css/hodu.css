@@ -1,0 +1,297 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+*{
+    box-sizing: border-box;
+    text-align: center;
+    font-family: Pretendard-Regular, serif;
+}
+body{
+    margin: 0;
+    position: relative;
+}
+.hodu-top{
+    background-color: rgba(242, 233, 216, 1);
+    color: rgba(0, 0, 0, 1);
+}
+.hodu-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 102px;
+    gap: 684px;
+}
+.hodu-logo {
+    width: 130px;
+    height: 40px;
+}
+.nav-inner {
+    display: flex;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    gap: 30px;
+    margin-right: 49px;
+}
+.nav-links-list {
+    float: left;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.hodu-download {
+    width: 140px;
+    height: 50px;
+    border-radius: 40px;
+    background-color: rgba(217, 118, 82, 1);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    border: 0;
+}
+.explain-top {
+    display: inline-block;
+    text-align: left;
+    margin: 200px 170px 262px 0;
+    vertical-align: top;
+}
+.explain-top-large {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    text-align: left;
+    margin: 0 0 40px 0;
+}
+.explain-top-small {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+    margin-bottom: 40px;
+}
+.box-cat {
+    width: 415px;
+    height: 766px;
+    vertical-align: bottom;
+}
+.lying-cat {
+    width: 660px;
+    height: 390px;
+    margin: 80px 110px 0 0;
+    vertical-align: bottom;
+}
+.explain-middle {
+    display: inline-block;
+    margin-top: 172px;
+    vertical-align: top;
+    color: rgba(0, 0, 0, 1);
+}
+.explain-middle-large {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+    text-align: left;
+}
+.explain-middle-small {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+}
+.explain-middle2-large {
+    margin-top: 120px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    color: rgba(217, 118, 82, 1);
+}
+.explain-middle2-small {
+    margin: 40px 0 88px 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 1);
+}
+.explain-middle2-small-inner {
+    font-weight: 700;
+    color: rgba(217, 118, 82, 1);
+}
+
+.ex-imgs {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1313px;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 72px;
+    overflow: auto;
+}
+.cat-img {
+    border-radius: 30px;
+    width: 378px;
+    height: 378px;
+}
+.explore-txt {
+    margin: 100px 0 28px 0;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+}
+.explore-btn {
+    border: 0;
+    border-radius: 40px;
+    padding: 15px 29px;
+    background-color: rgba(217, 118, 82, 1);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 80px;
+}
+hr {
+    width: 1278px;
+    border: 0.5px solid rgba(196, 196, 196, 1);
+    horiz-align: center;
+}
+.location {
+    margin: 0;
+    display: inline-block;
+    padding-right: 883px;
+}
+.location-title {
+    text-align: left;
+}
+.location-detail {
+    text-align: left;
+}
+.look-up-cat {
+    vertical-align: bottom;
+    margin-top: 181px;
+}
+
+.top-btn:hover {
+
+}
+.scroll-btn2:hover {
+    display: none;
+}
+.scroll-btn:hover {
+    display: inline;
+}
+.scroll-btn2 {
+    position: absolute;
+    bottom: 179px;
+    left: 1851px;
+}
+.scroll-btn {
+    display: none;
+    position: absolute;
+    bottom: 179px;
+    left: 1851px;
+}
+.hodu-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 160px;
+    gap: 784px;
+}
+.bottom-icons {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+.link-icon {
+    float: left;
+}
+.subscribe {
+    display: flex;
+    width: 1280px;
+    height: 200px;
+    background-color: rgba(38, 49, 64, 1);
+    border-radius: 30px;
+    position: absolute;
+    left: 50%;
+    bottom: 400px;
+    transform: translate(-50%, 0);
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 58px;
+}
+.subscribe-txt {
+    display: inline-block;
+
+}
+.subscribe-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+    color: rgba(255, 255, 255, 1);
+    margin: 0 0 18px 0;
+    text-align: left;
+}
+.subscribe-detail {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(242, 233, 216, 1);
+    text-align: left;
+    margin: 0;
+}
+.enter-email {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 530px;
+    height: 60px;
+    border-radius: 60px;
+    padding: 0 6px 0 30px;
+    background-color: rgba(255, 255, 255, 1);
+}
+.mail-tab {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.mail-img {
+    vertical-align: bottom;
+}
+.input-email {
+    border: 0;
+    padding: 0;
+    text-align: left;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(118, 118, 118, 1);
+}
+.subscribe-btn {
+    width: 135px;
+    height: 50px;
+    border-radius: 40px;
+    padding: 15px 29px;
+    gap: 10px;
+    background-color: rgba(217, 118, 82, 1);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 1);
+    border: 0;
+}
