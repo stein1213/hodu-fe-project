@@ -19,10 +19,12 @@ function makeImageList(datas) {
 }
 const imgBtn = document.querySelector(".explore-btn")
 imgBtn.addEventListener('click', ()=>{
-  fetchImages(pageToFetch += 1)
+  if (pageToFetch == 1){
+    fetchImages(pageToFetch += 1)
+  }
 })
 const infinityScroll = () => {
-    if (exImgs.scrollTop + exImgs.offsetHeight + 10 >= exImgs.scrollHeight && pageToFetch > 1){
+    if (exImgs.scrollTop + exImgs.offsetHeight + 10 >= exImgs.scrollHeight){
       fetchImages(pageToFetch += 1)
     }
 }
@@ -37,4 +39,4 @@ const throttling = (callback, delay) => {
     }
   };
 }
-exImgs.addEventListener('scroll', throttling(infinityScroll, 500))
+exImgs.addEventListener('scroll', throttling(infinityScroll, 200))

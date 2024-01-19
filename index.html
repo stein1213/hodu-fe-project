@@ -87,6 +87,18 @@
     <section class="location">
         <h2 class="location-title">Where you'll be</h2>
         <p class="location-detail">330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea</p>
+        <div class="map_wrap">
+            <div id="map"></div>
+            <div class="custom_typecontrol radius_border">
+                <span id="btnRoadmap" class="selected_btn" onclick="setMapType('roadmap')">지도</span>
+                <span id="btnSkyview" class="btn" onclick="setMapType('skyview')">스카이뷰</span>
+            </div>
+            <div class="custom_zoomcontrol radius_border">
+                <span onclick="zoomIn()"><img src="https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/ico_plus.png" alt="확대"></span>
+                <span onclick="zoomOut()"><img src="https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/ico_minus.png" alt="축소"></span>
+            </div>
+        </div>
+
     </section>
     <img src="media/looking-up-cat.png" alt="" class="look-up-cat">
     <div class="top-btn">
@@ -127,7 +139,18 @@
             <button type="button" class="subscribe-btn">Subscribe</button>
         </form>
     </article>
+    <div class="modal">
+        <img src="media/hodu-modal.png" alt="" class="modal-bg">
+        <div class="modal-content">
+            <img src="media/flushed-cat.png" alt="홍조 띈 고양이 사진" class="flushed-cat">
+            <h3 class="modal-heading">Thank you!</h3>
+            <span class="modal-txt">Lorem Ipsum is simply dummy text of the printing industry.</span> <br>
+            <button class="modal-inner-btn">OK! I Love HODU</button>
+        </div>
+    </div>
 </div>
 <script src="js/infinity-scroll.js"></script>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=8e15859a9cd2adceae27d98e394adff4"></script>
+<script src="js/kakao-map.js"></script>
 </body>
 </html>
