@@ -8,25 +8,16 @@
     <link rel="stylesheet" href="css/hodu.css">
 </head>
 <body>
-<div class="content-box">
     <header class="hodu-top">
         <nav class="hodu-nav">
             <img src="media/hodu-logo-top.svg" alt="" class="hodu-logo">
             <div class="nav-inner">
                 <ul class="nav-links">
-                    <li class="nav-links-list">
-                        <a href="">Home</a>
-                    </li>
-                    <li class="nav-links-list">
-                        <a href="">About</a>
-                    </li>
-                    <li class="nav-links-list">
-                        <a href="">Support</a>
-                    </li>
+                    <li class="nav-links-list"><a href="">Home</a></li>
+                    <li class="nav-links-list"><a href="">About</a></li>
+                    <li class="nav-links-list"><a href="">Support</a></li>
                 </ul>
-                <button class="hodu-download">
-                    Download
-                </button>
+                <button class="hodu-download">Download</button>
             </div>
         </nav>
         <section class="explain-top">
@@ -40,9 +31,7 @@
                 Lorem Ipsum has been the industry's standard dummy text <br>
                 ever since the 1500s, when an unknown
             </p>
-            <button class="hodu-download">
-                Download
-            </button>
+            <button class="hodu-download">Download</button>
         </section>
         <img src="media/box-cat.png" alt="박스 쓴 고양이 사진" class="box-cat">
     </header>
@@ -70,18 +59,12 @@
             <img src="media/cat-img1.png" alt="귀여운 고양이 사진들이 있어요!" class="cat-img">
             <img src="media/cat-img2.png" alt="" class="cat-img">
             <img src="media/cat-img3.png" alt="" class="cat-img">
-<!--        </div>-->
-<!--        <div class="ex-imgs2">-->
             <img src="media/cat-img4.png" alt="더 보려면 아래 show more 버튼을 클릭하세요." class="cat-img">
             <img src="media/cat-img5.png" alt="" class="cat-img">
             <img src="media/cat-img6.png" alt="" class="cat-img">
         </div>
-        <p class="explore-txt">
-            Continue exploring HODU
-        </p>
-        <button class="explore-btn">
-            Show more
-        </button>
+        <p class="explore-txt">Continue exploring HODU</p>
+        <button class="explore-btn">Show more</button>
     </main>
     <hr>
     <section class="location">
@@ -98,27 +81,26 @@
                 <span onclick="zoomOut()"><img src="https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/ico_minus.png" alt="축소"></span>
             </div>
         </div>
-
     </section>
-    <img src="media/looking-up-cat.png" alt="" class="look-up-cat">
+    <div class="cover-bottom-img"><img src="media/look-up-cat.png" alt="" class="look-up-cat"></div>
     <div class="top-btn">
-        <img src="media/scroll-top-btn.png" alt="상단 바로가기 버튼" class="scroll-btn2">
-        <img src="media/scroll-top-btn-hover.png" alt="상단 바로가기 버튼" class="scroll-btn">
+        <img src="media/scroll-top-btn.png" alt="상단 바로가기 버튼" class="scroll-btn" id="scroll-btn">
+        <img src="media/scroll-top-btn-hover.png" alt="상단 바로가기 버튼" class="scroll-btn-hover" id="scroll-btn-hover">
     </div>
     <footer class="hodu-footer">
         <img src="media/hodu-logo-bottom.png" alt="" class="hodu-logo-bottom">
         <ul class="bottom-icons">
             <li class="link-icon">
-                <img src="media/icon-blog.png" alt="블로그 연결">
+                <a href="https://section.blog.naver.com/BlogHome.naver?directoryNo=0&currentPage=1&groupId=0" target="_blank"><img src="media/icon-blog.png" alt="블로그 연결"></a>
             </li>
             <li class="link-icon">
-                <img src="media/icon-insta.png" alt="인스타그램 연결">
+                <a href="https://www.instagram.com/" target="_blank"><img src="media/icon-insta.png" alt="인스타그램 연결"></a>
             </li>
             <li class="link-icon">
-                <img src="media/icon-facebook.png" alt="페이스북 연결">
+                <a href="https://www.facebook.com/" target="_blank"><img src="media/icon-facebook.png" alt="페이스북 연결"></a>
             </li>
             <li class="link-icon">
-                <img src="media/icon-youtube.png" alt="유튜브 연결">
+                <a href="https://www.youtube.com/" target="_blank"><img src="media/icon-youtube.png" alt="유튜브 연결"></a>
             </li>
         </ul>
     </footer>
@@ -134,12 +116,12 @@
             <div class="mail-tab">
                 <img src="media/mail.svg" alt="" class="mail-img">
                 <label for="email"></label>
-                <input type="email" id="email" placeholder="Enter our e-mail address" class="input-email">
+                <input type="email" id="email" name="useremail" placeholder="Enter your e-mail address" class="input-email" required>
             </div>
             <button type="button" class="subscribe-btn">Subscribe</button>
         </form>
     </article>
-    <div class="modal">
+    <div class="modal-invisible" id="modal">
         <img src="media/hodu-modal.png" alt="" class="modal-bg">
         <div class="modal-content">
             <img src="media/flushed-cat.png" alt="홍조 띈 고양이 사진" class="flushed-cat">
@@ -148,9 +130,10 @@
             <button class="modal-inner-btn">OK! I Love HODU</button>
         </div>
     </div>
-</div>
 <script src="js/infinity-scroll.js"></script>
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=8e15859a9cd2adceae27d98e394adff4"></script>
 <script src="js/kakao-map.js"></script>
+<script src="js/modal.js"></script>
+<script src="js/scroll-up.js"></script>
 </body>
 </html>

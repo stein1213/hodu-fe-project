@@ -4,12 +4,11 @@
     font-weight: 400;
     font-style: normal;
 }
-
-
 *{
     box-sizing: border-box;
     text-align: center;
     font-family: Pretendard-Regular, serif;
+    scroll-behavior: smooth;
 }
 body{
     margin: 0;
@@ -26,25 +25,15 @@ body{
     height: 102px;
     gap: 684px;
 }
-.hodu-logo {
-    width: 130px;
-    height: 40px;
-}
 .nav-inner {
     display: flex;
 }
 .nav-links{
     display: flex;
-    justify-content: space-between;
     list-style: none;
-    font-weight: 400;
-    font-size: 16px;
     line-height: 20px;
     gap: 30px;
     margin-right: 49px;
-}
-.nav-links-list {
-    float: left;
 }
 a{
     text-decoration: none;
@@ -66,95 +55,82 @@ a{
     display: inline-block;
     text-align: left;
     margin: 200px 170px 262px 0;
-    vertical-align: top;
 }
 .explain-top-large {
-    font-weight: 700;
     font-size: 48px;
     line-height: 60px;
     text-align: left;
     margin: 0 0 40px 0;
 }
 .explain-top-small {
-    font-weight: 400;
-    font-size: 16px;
     line-height: 20px;
     text-align: left;
     margin-bottom: 40px;
+    padding-top: 6px;
 }
 .box-cat {
-    width: 415px;
-    height: 766px;
     vertical-align: bottom;
 }
 .lying-cat {
-    width: 660px;
-    height: 390px;
     margin: 80px 110px 0 0;
     vertical-align: bottom;
+    filter: drop-shadow(10px 10px 30px rgba(0, 0, 0, 0.25));
+    border-radius: 30px;
 }
 .explain-middle {
     display: inline-block;
     margin-top: 172px;
     vertical-align: top;
-    color: rgba(0, 0, 0, 1);
 }
 .explain-middle-large {
-    margin-bottom: 30px;
-    font-weight: 700;
+    margin: 0 0 30px 0;
     font-size: 36px;
     line-height: 45px;
     text-align: left;
 }
 .explain-middle-small {
-    font-weight: 400;
-    font-size: 16px;
     line-height: 20px;
     text-align: left;
 }
 .explain-middle2-large {
-    margin-top: 120px;
-    font-weight: 700;
+    margin: 120px 0 40px 0;
     font-size: 48px;
     line-height: 60px;
     color: rgba(217, 118, 82, 1);
 }
 .explain-middle2-small {
-    margin: 40px 0 88px 0;
-    font-weight: 400;
-    font-size: 16px;
+    margin-bottom: 16px;
     line-height: 20px;
-    color: rgba(0, 0, 0, 1);
 }
 .explain-middle2-small-inner {
     font-weight: 700;
     color: rgba(217, 118, 82, 1);
 }
-
 .ex-imgs {
     position: relative;
     left: 50%;
+    top: 50%;
     transform: translateX(-50%);
-    width: 1313px;
-    height: 828px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 72px;
+    width: 1440px;
+    height: 984px;
     overflow: auto;
 }
 .cat-img {
     border-radius: 30px;
     width: 378px;
     height: 378px;
+    filter: drop-shadow(10px 10px 30px rgba(0, 0, 0, 0.25));
+    margin: 72px 36px 0 36px;
 }
 .explore-txt {
-    margin: 100px 0 28px 0;
+    margin-top: 16px;
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
 }
 .explore-btn {
+    width: 143px;
+    margin-top: 4px;
     border: 0;
     border-radius: 40px;
     padding: 15px 29px;
@@ -164,69 +140,72 @@ a{
     line-height: 20px;
     color: rgba(255, 255, 255, 1);
     margin-bottom: 80px;
+    cursor: pointer;
 }
 hr {
     width: 1278px;
     border: 0.5px solid rgba(196, 196, 196, 1);
-    horiz-align: center;
+    margin: 0 auto;
 }
 .location {
-    margin: 0;
     display: inline-block;
+    vertical-align: bottom;
 }
 .location-title {
+    margin: 68px 0 20px 0;
     text-align: left;
+    font-size: 36px;
+    line-height: 45px;
 }
 .location-detail {
+    margin-bottom: 48px;
     text-align: left;
+    font-weight: 500;
+    line-height: 20px;
+    color: rgba(96, 99, 103, 1);
 }
 #map {
     width: 1278px;
     height: 520px;
     position:relative;
-    overflow:hidden;
 }
-.map_wrap {position:relative;overflow:hidden;width:100%;height:350px;}
+.map_wrap {position:relative;width:1278px;height:520px;}
 .radius_border{border:1px solid #919191;border-radius:5px;}
-.custom_typecontrol {position:absolute;top:10px;right:10px;overflow:hidden;width:130px;height:30px;margin:0;padding:0;z-index:1;font-size:12px;font-family:'Malgun Gothic', '맑은 고딕', sans-serif;}
+.custom_typecontrol {position:absolute;top:10px;right:10px;overflow:hidden;width:130px;height:30px;margin:0;padding:0;z-index:1;font-size:12px;font-family:'Malgun Gothic', '맑은 고딕', sans-serif;box-sizing: content-box;}
 .custom_typecontrol span {display:block;width:65px;height:30px;float:left;text-align:center;line-height:30px;cursor:pointer;}
 .custom_typecontrol .btn {background:#fff;background:linear-gradient(#fff,  #e6e6e6);}
 .custom_typecontrol .btn:hover {background:#f5f5f5;background:linear-gradient(#f5f5f5,#e3e3e3);}
 .custom_typecontrol .btn:active {background:#e6e6e6;background:linear-gradient(#e6e6e6, #fff);}
 .custom_typecontrol .selected_btn {color:#fff;background:#425470;background:linear-gradient(#425470, #5b6d8a);}
 .custom_typecontrol .selected_btn:hover {color:#fff;}
-.custom_zoomcontrol {position:absolute;top:50px;right:10px;width:36px;height:80px;overflow:hidden;z-index:1;background-color:#f5f5f5;}
+.custom_zoomcontrol {position:absolute;top:50px;right:10px;width:36px;height:80px;overflow:hidden;z-index:1;background-color:#f5f5f5;box-sizing: content-box}
 .custom_zoomcontrol span {display:block;width:36px;height:40px;text-align:center;cursor:pointer;}
-.custom_zoomcontrol span img {width:15px;height:15px;padding:12px 0;border:none;}
+.custom_zoomcontrol span img {width:15px;height:15px;padding:12px 0;border:none;box-sizing: content-box;}
 .custom_zoomcontrol span:first-child{border-bottom:1px solid #bfbfbf;}
-
-
-
-
 .look-up-cat {
     vertical-align: bottom;
+    background-size: cover;
+    object-fit: cover;
+    width: 100%;
+    height: 340px;
     margin-top: 181px;
 }
-
-.top-btn:hover {
-
-}
-.scroll-btn2:hover {
-    display: none;
-}
-.scroll-btn:hover {
-    display: inline;
-}
-.scroll-btn2 {
-    position: absolute;
-    bottom: 179px;
-    left: 1851px;
-}
 .scroll-btn {
-    display: none;
-    position: absolute;
-    bottom: 179px;
-    left: 1851px;
+    position: fixed;
+    bottom: 19px;
+    right: 24px;
+    z-index: 2;
+}
+.scroll-btn-hover {
+    position: fixed;
+    bottom: 19px;
+    right: 24px;
+    opacity: 0;
+    z-index: 2;
+    cursor: pointer;
+}
+.scroll-btn-hover:hover {
+    opacity: 1;
 }
 .hodu-footer {
     display: flex;
@@ -239,9 +218,6 @@ hr {
     display: flex;
     gap: 20px;
     list-style: none;
-}
-.link-icon {
-    float: left;
 }
 .subscribe {
     display: flex;
@@ -257,12 +233,7 @@ hr {
     justify-content: space-between;
     padding: 0 58px;
 }
-.subscribe-txt {
-    display: inline-block;
-
-}
 .subscribe-title {
-    font-weight: 700;
     font-size: 36px;
     line-height: 45px;
     color: rgba(255, 255, 255, 1);
@@ -270,7 +241,6 @@ hr {
     text-align: left;
 }
 .subscribe-detail {
-    font-weight: 400;
     font-size: 14px;
     line-height: 18px;
     color: rgba(242, 233, 216, 1);
@@ -284,32 +254,26 @@ hr {
     width: 530px;
     height: 60px;
     border-radius: 60px;
-    padding: 0 6px 0 30px;
+    padding: 0 6px 0 28px;
     background-color: rgba(255, 255, 255, 1);
 }
 .mail-tab {
     display: flex;
-    align-items: center;
     gap: 8px;
-}
-.mail-img {
-    vertical-align: bottom;
 }
 .input-email {
     border: 0;
     padding: 0;
+    width: 300px;
     text-align: left;
     font-weight: 400;
-    font-size: 16px;
     line-height: 20px;
     color: rgba(118, 118, 118, 1);
 }
 .subscribe-btn {
     width: 135px;
-    height: 50px;
     border-radius: 40px;
     padding: 15px 29px;
-    gap: 10px;
     background-color: rgba(217, 118, 82, 1);
     font-weight: 700;
     font-size: 16px;
@@ -317,8 +281,15 @@ hr {
     color: rgba(255, 255, 255, 1);
     border: 0;
 }
-.modal {
+.modal-invisible {
     display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+.modal-visible {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -331,7 +302,6 @@ hr {
 }
 .modal-content {
     position: absolute;
-    text-align: center;
     top: 60px;
     left: 50%;
     transform: translateX(-50%);
@@ -339,25 +309,19 @@ hr {
 }
 .modal-heading {
     margin: 24px 0 12px 0;
-    font-weight: 700;
     font-size: 36px;
     line-height: 45px;
     color: rgba(217, 118, 82, 1);
 }
 .modal-txt {
-    font-weight: 400;
     font-size: 14px;
     line-height: 18px;
-    color: rgba(0, 0, 0, 1);
-
 }
 .modal-inner-btn {
     margin-top: 38px;
     border-radius: 40px;
     width: 183px;
-    height: 50px;
     padding: 15px 29px;
-    gap: 10px;
     background-color: rgba(217, 118, 82, 1);
     font-weight: 700;
     font-size: 16px;

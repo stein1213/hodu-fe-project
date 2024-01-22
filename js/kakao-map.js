@@ -1,14 +1,12 @@
-
-let mapContainer = document.getElementById('map'),
+const mapContainer = document.getElementById('map'),
     mapOption = {
         center: new kakao.maps.LatLng(33.442303, 126.571544),
-        level: 3
+        level: 4
 };
-let map = new kakao.maps.Map(mapContainer, mapOption);
-
+const map = new kakao.maps.Map(mapContainer, mapOption);
 function setMapType(maptype) {
-        var roadmapControl = document.getElementById('btnRoadmap');
-        var skyviewControl = document.getElementById('btnSkyview');
+        const roadmapControl = document.getElementById('btnRoadmap');
+        const skyviewControl = document.getElementById('btnSkyview');
         if (maptype === 'roadmap') {
                 map.setMapTypeId(kakao.maps.MapTypeId.ROADMAP);
                 roadmapControl.className = 'selected_btn';
@@ -19,13 +17,15 @@ function setMapType(maptype) {
                 roadmapControl.className = 'btn';
         }
 }
-
-// 지도 확대, 축소 컨트롤에서 확대 버튼을 누르면 호출되어 지도를 확대하는 함수입니다
 function zoomIn() {
         map.setLevel(map.getLevel() - 1);
 }
-
-// 지도 확대, 축소 컨트롤에서 축소 버튼을 누르면 호출되어 지도를 확대하는 함수입니다
 function zoomOut() {
         map.setLevel(map.getLevel() + 1);
 }
+const markerPosition  = new kakao.maps.LatLng(33.442303, 126.571544);
+
+const marker = new kakao.maps.Marker({
+        position: markerPosition
+});
+marker.setMap(map);
