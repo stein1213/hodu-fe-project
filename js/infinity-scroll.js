@@ -17,7 +17,7 @@ function makeImageList(datas) {
     exImgs.innerHTML += '<li><img src="'+ item.download_url +'" alt="" class="load-img"/></li>'
   })
 }
-const imgBtn = document.querySelector(".explore-btn")
+const imgBtn = document.querySelector(".gallery-btn")
 imgBtn.addEventListener('click', ()=>{
   if (pageToFetch == 1){
     fetchImages(pageToFetch += 1)
