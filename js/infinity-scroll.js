@@ -1,4 +1,4 @@
-const exImgs = document.querySelector(".ex-imgs")
+const exImgs = document.querySelector(".img-list")
 let pageToFetch = 1;
 async function fetchImages(pageNum){
   try {
@@ -14,7 +14,7 @@ async function fetchImages(pageNum){
 }
 function makeImageList(datas) {
   datas.forEach((item)=>{
-    exImgs.innerHTML += '<img src="'+ item.download_url +'" alt="" class="cat-img"/>'
+    exImgs.innerHTML += '<li><img src="'+ item.download_url +'" alt="" class="load-img"/></li>'
   })
 }
 const imgBtn = document.querySelector(".explore-btn")

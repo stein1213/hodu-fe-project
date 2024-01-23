@@ -4,42 +4,42 @@
     font-weight: 400;
     font-style: normal;
 }
-*{
+* {
     box-sizing: border-box;
     text-align: center;
     font-family: Pretendard-Regular, serif;
     scroll-behavior: smooth;
+    color: rgba(0, 0, 0, 1);
 }
-body{
+body {
     margin: 0;
     position: relative;
 }
-.hodu-top{
+.header {
     background-color: rgba(242, 233, 216, 1);
-    color: rgba(0, 0, 0, 1);
 }
-.hodu-nav{
+.nav {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 102px;
     gap: 684px;
 }
-.nav-inner {
+.nav-menu {
     display: flex;
 }
-.nav-links{
+.nav-list {
     display: flex;
     list-style: none;
     line-height: 20px;
     gap: 30px;
     margin-right: 49px;
 }
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
-.hodu-download {
+.nav-download {
     width: 140px;
     height: 50px;
     border-radius: 40px;
@@ -51,22 +51,34 @@ a{
     color: rgba(255, 255, 255, 1);
     border: 0;
 }
-.explain-top {
+.intro {
     display: inline-block;
     text-align: left;
     margin: 200px 170px 262px 0;
 }
-.explain-top-large {
+.intro-title {
     font-size: 48px;
     line-height: 60px;
     text-align: left;
     margin: 0 0 40px 0;
 }
-.explain-top-small {
+.intro-details {
     line-height: 20px;
     text-align: left;
     margin-bottom: 40px;
     padding-top: 6px;
+}
+.intro-download {
+    width: 140px;
+    height: 50px;
+    border-radius: 40px;
+    background-color: rgba(217, 118, 82, 1);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19.09px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    border: 0;
 }
 .box-cat {
     vertical-align: bottom;
@@ -77,36 +89,36 @@ a{
     filter: drop-shadow(10px 10px 30px rgba(0, 0, 0, 0.25));
     border-radius: 30px;
 }
-.explain-middle {
+.explanation {
     display: inline-block;
     margin-top: 172px;
     vertical-align: top;
 }
-.explain-middle-large {
+.explanation-title {
     margin: 0 0 30px 0;
     font-size: 36px;
     line-height: 45px;
     text-align: left;
 }
-.explain-middle-small {
+.explanation-details {
     line-height: 20px;
     text-align: left;
 }
-.explain-middle2-large {
+.gallery-title {
     margin: 120px 0 40px 0;
     font-size: 48px;
     line-height: 60px;
     color: rgba(217, 118, 82, 1);
 }
-.explain-middle2-small {
+.gallery-details {
     margin-bottom: 16px;
     line-height: 20px;
 }
-.explain-middle2-small-inner {
+.gallery-details-strong {
     font-weight: 700;
     color: rgba(217, 118, 82, 1);
 }
-.ex-imgs {
+.img-list {
     position: relative;
     left: 50%;
     top: 50%;
@@ -114,21 +126,25 @@ a{
     width: 1440px;
     height: 984px;
     overflow: auto;
+    list-style: none;
 }
-.cat-img {
+li {
+    float: left;
+}
+.load-img {
     border-radius: 30px;
     width: 378px;
     height: 378px;
     filter: drop-shadow(10px 10px 30px rgba(0, 0, 0, 0.25));
     margin: 72px 36px 0 36px;
 }
-.explore-txt {
+.gallery-tip {
     margin-top: 16px;
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
 }
-.explore-btn {
+.gallery-btn {
     width: 143px;
     margin-top: 4px;
     border: 0;
@@ -157,7 +173,7 @@ hr {
     font-size: 36px;
     line-height: 45px;
 }
-.location-detail {
+.location-details {
     margin-bottom: 48px;
     text-align: left;
     font-weight: 500;
@@ -182,7 +198,7 @@ hr {
 .custom_zoomcontrol span {display:block;width:36px;height:40px;text-align:center;cursor:pointer;}
 .custom_zoomcontrol span img {width:15px;height:15px;padding:12px 0;border:none;box-sizing: content-box;}
 .custom_zoomcontrol span:first-child{border-bottom:1px solid #bfbfbf;}
-.look-up-cat {
+.looking-up-cat {
     vertical-align: bottom;
     background-size: cover;
     object-fit: cover;
@@ -207,7 +223,7 @@ hr {
 .scroll-btn-hover:hover {
     opacity: 1;
 }
-.hodu-footer {
+.footer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -240,14 +256,14 @@ hr {
     margin: 0 0 18px 0;
     text-align: left;
 }
-.subscribe-detail {
+.subscribe-details {
     font-size: 14px;
     line-height: 18px;
     color: rgba(242, 233, 216, 1);
     text-align: left;
     margin: 0;
 }
-.enter-email {
+.reg-email {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -257,7 +273,7 @@ hr {
     padding: 0 6px 0 28px;
     background-color: rgba(255, 255, 255, 1);
 }
-.mail-tab {
+.reg-email-contents {
     display: flex;
     gap: 8px;
 }
@@ -300,24 +316,24 @@ hr {
     position: relative;
     border-radius: 30px;
 }
-.modal-content {
+.modal-contents {
     position: absolute;
     top: 60px;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
 }
-.modal-heading {
+.modal-title {
     margin: 24px 0 12px 0;
     font-size: 36px;
     line-height: 45px;
     color: rgba(217, 118, 82, 1);
 }
-.modal-txt {
+.modal-details {
     font-size: 14px;
     line-height: 18px;
 }
-.modal-inner-btn {
+.modal-close-btn {
     margin-top: 38px;
     border-radius: 40px;
     width: 183px;
